@@ -70,6 +70,10 @@ a {
   text-decoration: none;
 }
 
+a.side {
+  font-size: 13px;
+}
+
 footer {
     position: fixed;
     bottom: 3vw;
