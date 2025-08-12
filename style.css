@@ -50,7 +50,7 @@ p {
 }
 
 p.center {
-  margin-top: 125px;
+  margin-top: 100px;
   padding: 10px;
   text-align: center;
   font-size: 18px;
@@ -58,11 +58,27 @@ p.center {
 }
 
 p.center2 {
-  margin-top: 0;
+  margin-top: 0px;
   padding: 10px;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+
+p.center3 {
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+p.text {
+  margin: 0px;
+  padding: 10px;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: normal;
 }
 
 a {
@@ -96,16 +112,19 @@ small {
   font-weight: bold;
 }
 
-.container {
-  justify-content: flex-start;
-}
-
 .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
   margin-bottom: 40px;
+}
+
+.text {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 .photo-ground {
