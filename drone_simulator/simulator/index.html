@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Drone Simulator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="overlay position-left">
+    <div class="instructions"><strong>Drone Simulator</strong></div>
+    <div class="instructions">Controls: <kbd>←↑→↓</kbd> for roll and pitch, <kbd>WASD</kbd> for yaw and power.</div>
+    <div class="instructions">Pause: <kbd>Space</kbd></div>
+    <div class="instructions">Reset: <kbd>Backspace</kbd></div>
+  </div>
+
+  <div class="overlay position-center">
+    <div class="instructions"><strong>Monitor</strong></div>
+    <div id="positions" class="instructions"></div>
+  </div>
+
+  <div class="overlay position-right">
+    <div class="instructions"><strong>Rotors configurations</strong></div>
+    <div class="configurations-buttons-container">
+      <div class="configuration-button" onclick="changeDroneConfiguration('quad+', event.currentTarget)">
+        <span>Quad</span>
+      </div>
+      <div class="configuration-button configuration-button-selected" onclick="window.changeDroneConfiguration('quadx', event.currentTarget)">
+        <span>Quad-X</span>
+      </div>
+      <div class="configuration-button" onclick="window.changeDroneConfiguration('hex+', event.currentTarget)">
+        <span>Hex</span>
+      </div>
+      <div class="configuration-button" onclick="window.changeDroneConfiguration('hexx', event.currentTarget)">
+        <span>Hex-X</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="power-wrap">
+    <div class="power-label">
+      <span>Power</span>
+    </div>
+    <div class="power-bar">
+      <div class="power-fill" id="powerFill"></div>
+    </div>
+    <div class="power-label">
+        <span id="powerPct">0%</span>
+    </div>
+  </div>
+
+  <div id="toast" class="toast">
+    You are on the ground. Take off to move.
+  </div>
+
+  <div id="credits">Author: Jacopo Stortini - Powered by: Three.js</div>
+
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="rotor-panel.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
