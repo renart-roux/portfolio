@@ -1,8 +1,8 @@
 :root {
-  --main: #006060;
+  --main: lightpink;
   --secondary: #600000;
-  --main_dark: #002020;
-  --white: #f2f2f2;
+  --main_dark: deeppink;
+  --white: hotpink;
 }
 
 body {
